@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace OpenQMS.Migrations.SqlServer
+namespace OpenQMS.Migrations
 {
     /// <inheritdoc />
     public partial class InitialSqlServer : Migration
