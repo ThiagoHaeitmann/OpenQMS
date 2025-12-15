@@ -29,5 +29,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/openqms:${{ github.ref_name }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/openqms:1.3.0-sqlserver
             ${{ secrets.DOCKERHUB_USERNAME }}/openqms:latest
