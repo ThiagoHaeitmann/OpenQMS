@@ -37,6 +37,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
                   .MigrationsHistoryTable("__EFMigrationsHistory")
     )
 );
+
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo("/app/DataProtection"))
+    .SetApplicationName("OpenQMS");
     //options.UseSqlite(connectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
