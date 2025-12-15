@@ -22,6 +22,9 @@ along with this program.  If not, see http://www.gnu.org/licenses/.
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.DataProtection.Repositories;
+using Microsoft.Extensions.FileProviders;
 using OpenQMS.Authorization;
 using OpenQMS.Data;
 using OpenQMS.Models;
